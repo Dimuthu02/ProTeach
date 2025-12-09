@@ -38,8 +38,9 @@ if (!$enrollment) {
 
 // Handle marking as complete
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['mark_complete'])) {
-    $stmt = $conn->prepare("INSERT INTO material_progress (user_id, material_id, completed, completed_at) VALUES (?, ?, 1, NOW()) ON DUPLICATE KEY UPDATE completed = 1, completed_at = NOW()");
-    $stmt->bind_param("ii", $userId, $materialId);
+    $completedAt = date('Y-m-d H:i:s');
+    $stmt = $conn->prepare("INSERT INTO material_progress (user_id, material_id, completed, completed_at) VALUES (?, ?, 1, ?) ON DUPLICATE KEY UPDATE completed = 1, completed_at = ?");
+    $stmt->bind_param("iiss", $userId, $materialId, $completedAt, $completedAt);
     $stmt->execute();
     $stmt->close();
     header("Location: course.php?id=" . $material['course_id']);

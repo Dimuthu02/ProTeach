@@ -33,9 +33,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $updateStmt->execute();
                 $updateStmt->close();
                 
-                // Set session
+                // Get full user data for caching
+                $fullUserStmt = $conn->prepare("SELECT id, username, email, full_name FROM users WHERE id = ?");
+                $fullUserStmt->bind_param("i", $user['id']);
+                $fullUserStmt->execute();
+                $fullUserResult = $fullUserStmt->get_result();
+                $fullUserData = $fullUserResult->fetch_assoc();
+                $fullUserStmt->close();
+                
+                // Set session with cached user data
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
+                $_SESSION['user_data'] = $fullUserData;
                 
                 $stmt->close();
                 $conn->close();

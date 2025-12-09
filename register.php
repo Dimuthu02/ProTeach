@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $result = $stmt->get_result();
         
         if ($result->num_rows > 0) {
-            $error = 'Username or email already exists.';
+            $error = 'Registration failed. Please try different credentials.';
         } else {
             // Hash password and create user
             $hashed_password = password_hash($password, PASSWORD_DEFAULT);

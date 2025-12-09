@@ -37,6 +37,11 @@ function getCurrentUser() {
         return null;
     }
     
+    // Cache user data in session to avoid repeated queries
+    if (isset($_SESSION['user_data'])) {
+        return $_SESSION['user_data'];
+    }
+    
     $conn = getDBConnection();
     $userId = getCurrentUserId();
     
@@ -48,6 +53,11 @@ function getCurrentUser() {
     
     $stmt->close();
     $conn->close();
+    
+    // Cache in session
+    if ($user) {
+        $_SESSION['user_data'] = $user;
+    }
     
     return $user;
 }

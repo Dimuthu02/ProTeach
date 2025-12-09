@@ -80,7 +80,8 @@ if ($enrollment && !empty($materials)) {
             $completedCount++;
         }
     }
-    $completionPercentage = ($completedCount / count($materials)) * 100;
+    $totalMaterials = max(1, count($materials)); // Prevent division by zero
+    $completionPercentage = ($completedCount / $totalMaterials) * 100;
     
     // Update progress in database
     $stmt = $conn->prepare("UPDATE enrollments SET completion_percentage = ? WHERE user_id = ? AND course_id = ?");
