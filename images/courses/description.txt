@@ -1,0 +1,28 @@
+AI -
+
+This course introduces the Artificial Intelligence & Machine Learning and how these algorithms could be applied to the applications in the general use.
+
+
+graphic -
+
+This course focuses to design professional grade materials using the required knowledge. Users will experience much more deeper in to graphical designs.
+
+
+data -
+
+This course features in collecting, analyzing and interpreting data to improve student performance
+
+
+ui -
+
+This course is aimed at helping educators understand the principles of UI/UX designs. This will help you to build professional applications
+
+
+java -
+
+
+This course provides the base to a versatile and popular programming language which is used from web apps to mobile apps. We will go deeper in to mobile app development with JAVA
+
+ps -
+
+This course will go deep in to advanced photoshop skills to create more professional grade materials / designs.

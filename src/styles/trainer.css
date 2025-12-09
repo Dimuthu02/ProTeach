@@ -1,0 +1,59 @@
+.userProfile{
+
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 60px;
+    overflow: hidden;
+    border-radius: 6px;
+    display: inline-table;
+    padding: 10px , 30px;
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#manage-courses{
+
+    font-weight: bold;
+    margin-right: 30px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(255, 49, 49);
+    width: 200px;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 15pt;
+    transition: all 0.4s ease;
+}
+#manage-courses:hover{
+    background-color: rgb(131, 55, 223);
+    color: black;
+    transform: scale(1.1);
+}
+
+
+
+#manage-events{
+
+    font-weight: bold;
+    margin-right: 30px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(255, 49, 49);
+    width: 200px;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 15pt;
+    transition: all 0.4s ease;
+}
+#manage-events:hover{
+    background-color: rgb(131, 55, 223);
+    color: black;
+    transform: scale(1.1);
+}
+

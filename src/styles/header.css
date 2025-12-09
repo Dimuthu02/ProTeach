@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+
+#logo1{
+
+    height: 180px;
+    width: 200px;
+
+}
+
+body{
+    overflow-x: hidden;
+    background:linear-gradient(45deg,blueviolet,lightgreen);
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    display: flex;
+    position:fixed;
+    width: 100%;
+    align-items: center;
+    height: 90px;
+    background-color: 
+    #4b6cb7;
+    margin: 0;
+    padding: 10px 0;
+    transition: 0.1s;
+    font-size: 18px;
+    z-index: 999;
+
+}
+
+.nav-bar{
+	
+	list-style-type : none;
+    display: flex;
+	margin : 0;
+	padding : 0;
+	overflow:hidden;
+    width: 100%;
+}
+
+.nav a{
+	
+    font-weight: bold;
+	display : block;
+	float : left;
+	color:rgb(255, 255, 255);
+	text-align: center;
+	padding : 20px 10px;
+	text-decoration:none;
+    border-radius: 10pt;
+    transition: all 0.3s ease;
+}
+
+
+
+.nav a:hover{
+	background-color :#330000;
+    color: white;
+    
+}
+
+#search{
+    background-color: white;
+    margin-right: 25px;
+    border-style: groove; 
+    transition: all 0.4s ease;
+    height: 35px;
+    border-radius: 5pt;
+    color: black;
+}
+#search:hover{
+    background-color: #ffffff;
+    border-radius: 10pt;
+
+}
+#search-button{
+    margin-right: 20px;
+    height: 35px;
+
+}
+
+#log-in{
+    font-weight: bold;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 49, 49);
+    width: 140px;
+    padding: 10px;
+    border-radius: 15pt;
+    transition: all 0.4s ease;
+}
+#log-in:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#sign-up{
+    font-weight: bold;
+    margin-right: 30px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(255, 49, 49);
+    width: 200px;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 15pt;
+    transition: all 0.4s ease;
+}
+
+#sign-up:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}

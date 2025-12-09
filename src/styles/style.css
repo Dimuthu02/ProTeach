@@ -1,0 +1,214 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    
+}
+.images {
+    display: flex;
+    width: 100%;
+    animation: sliding 22s infinite cubic-bezier(1, 0.95, 0.565, 1);
+}
+.images img {
+    position: relative;/* position is set to relative */
+    margin-top: 100px; 
+    height: 550px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+/*Key frames to create Slider*/
+
+@keyframes sliding {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(0%);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-100%);
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    85% {
+        transform: translateX(-200%);
+    }
+    90% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+#slide2:checked ~ .s2 {
+    margin-left: -100%;
+}
+#slide3:checked ~ .s3 {
+    margin-left: -200%;
+}
+#slide4:checked ~ .s4 {
+    margin-left: -300%;
+}
+
+
+#become-teacher:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.1);
+}
+
+
+#become-teacher
+{
+    font-weight: bold;
+    margin-right: 30px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(255, 49, 49);
+    width: 200px;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 15pt;
+    transition: all 0.4s ease;
+    
+}
+
+
+.body-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.body-content .heading{
+    font-size: 40px;
+    color: #334;
+    margin-bottom: 30px;
+    justify-content: center;
+
+}
+
+.body-content .body{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
+    padding: 10px;
+   
+
+}
+
+.body-content .body .box{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.7);
+
+}
+
+.body-content .body .box .body-img{
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.body-content .body .box:hover .body-img img{
+    
+    opacity: 0.5;
+
+}
+
+.body-content .body .box .img-content .Reg-btn{
+    display: inline-block;
+    padding: 10px , 30px;
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    
+    background:linear-gradient(45deg,rgb(26, 50, 184),rgb(174, 37, 208));
+    font-size: 16px;
+    height: 50px;
+    border-radius: 5%;
+    width: 250px;
+}
+
+.body-content .body .box .img-content p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: black;
+}
+
+.body-content .body .box .img-content .Reg-btn:hover{
+    background:linear-gradient(45deg,rgb(226, 43, 43),lightgreen);
+    border-radius: 5px;
+    transform: scale(1.1);
+    
+}
+
+
+#load-more{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    background:linear-gradient(45deg,rgb(26, 50, 184),rgb(174, 37, 208));
+    font-size: 20px;
+    height: 50px;
+    border-radius: 5%;
+    width: 250px;
+    cursor: pointer;
+   justify-content: center;
+}
+#load-more:hover{
+    background:linear-gradient(45deg,rgb(226, 43, 43),lightgreen);
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+
+
+#events{
+    justify-content: center;
+}
+#load-more{
+    position: absolute;
+    bottom: right;
+    right: 16px;
+}
+

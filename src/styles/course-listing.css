@@ -1,0 +1,91 @@
+.container{
+
+    
+    display: flex;
+
+}
+
+.category
+{   
+    margin: 10px;
+    display: grid;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+    color: black;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 60px;
+    
+    
+
+}
+
+.course-item{
+
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 60px;
+    overflow: hidden;
+    border-radius: 6px;
+    display: inline-table;
+    padding: 10px , 30px;
+    border: 1px solid black;
+    width: 350px;
+    height: 420px;
+    text-align: center;
+    transition: all 0.15s ease;
+}
+
+
+.more-details
+{  
+    text-align: center;
+    display: inline-block;
+    padding: 10px , 30px;
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    background:linear-gradient(45deg,rgb(26, 50, 184),rgb(174, 37, 208));
+    font-size: 16px;
+    height: 30px;
+    border-radius: 5%;
+    width: 200px;
+
+}
+
+.more-details:hover{
+    background:linear-gradient(45deg,rgb(226, 43, 43),rgb(162, 17, 207));
+    border-radius: 5px;
+    transform: scale(1.1);
+    color: white;
+}
+
+h1{
+    font-size:xx-large;
+    background-color: white;
+    font-weight: bold;
+    width: 345px;
+    height: 50px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+}
+
+#course-cont{
+
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+}
