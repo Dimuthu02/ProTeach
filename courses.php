@@ -19,6 +19,7 @@ $isLoggedIn = isLoggedIn();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses - ProTeach</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav>
